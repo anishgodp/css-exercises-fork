@@ -1,17 +1,45 @@
+/* 
+  This CSS file is for styling the HTML file.
+  It sets the font of the page to Courier New, makes all images 100x100px, and sets the title to 36px font with a weight of 900.
+  It also sets up a footer at the bottom of the page for attribution.
+  The rest of the styles are for the .info class which is used to display the images and text.
+*/
+
+/* 
+  Set the font of the page to Courier New.
+  This is a monospace font, so all characters are the same width.
+*/
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
+/* 
+  Set the size of the images to 100x100px.
+  This is just a default size, and can be changed if needed.
+*/
 img {
   width: 100px;
   height: 100px;
 }
 
+/* 
+  Set the font size and weight of the title.
+  The title is the text that is displayed at the top of the page.
+  The font size is set to 36px, and the font weight is set to 900.
+  This means that the title will be displayed in a large, bold font.
+*/
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
 }
 
+/* 
+  Set up a footer at the bottom of the page.
+  The footer is used to display attribution for the icons.
+  It is positioned at the bottom of the page, and is centered horizontally.
+*/
 /* do not edit this footer */
 .footer {
   position: fixed;
@@ -24,3 +52,30 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* 
+  Set up the .info class.
+  This class is used to display the images and text.
+  It sets up a flex container with the image on the left and the text on the right.
+  The image and text are both centered vertically.
+  The max-width is set to 200px, so the text will wrap if it is too long.
+*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.info {
+  max-width: 200px;
+}
+
+/* 
+  Set up the .container class.
+  This class is used to contain the .info elements.
+  It sets up a flex container with the .info elements centered horizontally.
+  The gap is set to 52px, so there is a small gap between each .info element.
+*/
+
+
